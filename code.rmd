@@ -352,6 +352,7 @@ First, we created indicators and removes NAs to simplify the analysis.
 
 
 ```{r}
+# Taking into account that the loop is too long, you can upload the csv created with the data screaped, to run the following steps.
 #reefbase = read.csv('reefbase_by_country.csv')
 reef_countries = reefbase %>% 
   transmute(
@@ -481,10 +482,9 @@ call_chatgtp("what is the biggest coral reef, and where are the coral reefs in r
 
 ## Conclusions
 
-Web scraping is a powerful technique to collect data from websites, and it can be used to extract information that is not available in structured formats such as APIs or databases.
-In this project, we used Selenium to scrape data from the ReefBase website, which provides information about coral reefs and related ecosystems around the world. We collected data about the area of different types of ecosystems, as well as indicators of their health and use, for many countries.
+Web scraping is a powerful technique to collect data from websites, and it can be used to extract information that is not available in structured formats such as APIs or databases. In this project, we used Selenium to scrape data from the ReefBase website, which provides information about coral reefs and related ecosystems around the world. We collected data about the area of different types of ecosystems, as well as indicators of their health and use, for many countries.
 
-We then cleaned and analyzed this data, creating summary statistics and visualizations such as histograms and cluster maps. 
+We then cleaned and analyzed this data, creating summary statistics and visualizations such as histograms and cluster maps. Finally, we included an API connection to retrieve generated text from a NLP model, created by Open AI.
 
 
 
